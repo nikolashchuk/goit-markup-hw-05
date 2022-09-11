@@ -34,7 +34,7 @@
               <a class="link nav-link studio" href="./index.html" class="nav-link">Студія</a>
             </li>
             <li class="nav-item">
-              <a class="link nav-link" href="./portfolio.html" class="nav-link">Портфоліо</a>
+              <a class="link nav-link " href="./portfolio.html" class="nav-link">Портфоліо</a>
             </li>
             <li class="nav-item">
               <a class="link nav-link" href="#Портфоліо" class="nav-link">Контакти</a>
@@ -66,7 +66,7 @@
     <section class="section-hero">
       <div class="container hero-container">
         <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-btn">Замовити послугу</button>
+        <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!-- переваги -->
@@ -127,28 +127,43 @@
         <h2 class="about-title">Чим ми займаємося</h2>
         <ul class="list about-list">
           <li>
-            <img
+            <div class="about-thumb" >
+              <img
               src="./image/about-us/img-1.jpg"
               alt="людина працює за ноутбуком"
               width="370"
               height="294"
             />
+            <div class="about-desc">
+              <h3 class="about-txt">Десктопні додатки</h3>
+            </div>
+            </div>
           </li>
           <li>
-            <img
+            <div class="about-thumb">
+              <img
               src="./image/about-us/img-2.jpg"
               alt="людина тримає телефон в руці"
               width="370"
               height="294"
             />
+            <div class="about-desc">
+              <h3 class="about-txt">Мобільні додатки</h3>
+            </div>
+            </div>
           </li>
           <li>
-            <img
+            <div class="about-thumb">
+              <img
               src="./image/about-us/img-3.jpg"
               alt="людина тримає планшет в руці"
               width="370"
               height="294"
             />
+            <div class="about-desc">
+              <h3 class="about-txt">Дизайнерські рішення</h3>
+            </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -522,5 +537,18 @@
       </div>
       </div>
     </footer>
+
+    <!-- modal-window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg width="11px" height="11px">
+            <use href="./image/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
